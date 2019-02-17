@@ -107,10 +107,10 @@ class DisplayPhoneNumbers extends React.Component {
         {
           (paginatedPhoneNumbers.phoneNumberData && paginatedPhoneNumbers.phoneNumberData.length < 1) &&
           (
-            <div class="card" style={{ width: "18rem" }}>
-              <div class="card-body">
-                <h5 class="card-title">Welcome,</h5>
-                <p class="card-text">You have not Generated Phone Numbers!</p>
+            <div className="card" style={{ width: "18rem" }}>
+              <div className="card-body">
+                <h5 className="card-title">Welcome,</h5>
+                <p className="card-text">You have not Generated Phone Numbers!</p>
               </div>
             </div>
           )

@@ -8,7 +8,6 @@ const Button = ({
   disabled
 }) => (
     <button
-      type="submit"
       className={className ? `btn btn-outline-warning ${className}` : 'btn btn-outline-warning'}
       onClick={onClick}
       disabled={disabled}
