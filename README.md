@@ -1,71 +1,60 @@
 [![Build Status](https://travis-ci.org/missating/random-phone-number-generator.svg?branch=develop)](https://travis-ci.org/missating/random-phone-number-generator)
 [![Coverage Status](https://coveralls.io/repos/github/missating/random-phone-number-generator/badge.svg?branch=develop)](https://coveralls.io/github/missating/random-phone-number-generator?branch=develop)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Random Phone Number Generator
 
-## Available Scripts
+## Introduction
 
-In the project directory, you can run:
+> **Random Phone Number Generator** is an application that enables the generating of random, unique phone numbers. You can view the Live app [here](https://random-pn-generator.herokuapp.com/)
 
-### `npm start`
+## Table of Content
+- [Features](#features)
+- [Technologies](#technologies)
+- [Installation](#installation)
+- [Testing](#testing) 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Features
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+* User can generate between 1 - 5000 phone numbers
+* User can download the generated phone numbers in .txt format
+* User can sort phone numbers generated in ascending or descending order
+* User can get the maximum and minimum generated phone numbers
 
-### `npm test`
+## Technologies
+* ReactJS
+* Redux
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+* Before cloning the repo, make sure you have Node and Yarn installed on your local machine
+* Clone the repo to your local machine
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```sh
+> $ git clone https://github.com/missating/random-phone-number-generator.git
+```
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+* Change directory into the root of the project 
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+> $ cd random-phone-number-generator
+```
 
-### `npm run eject`
+* Install all needed dependencies by running
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```sh
+> $ yarn install
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+* To start the application, run
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```sh
+> $ yarn start
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Testing
 
-## Learn More
+* In the root of the project directoty run
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+```sh
+> $ yarn test
+```

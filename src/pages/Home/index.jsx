@@ -50,7 +50,7 @@ export class Home extends Component {
   onDownloadPhoneNumbers = () => {
     const phoneNumbers = this.props.phoneNumbers.map(phoneNumber => phoneNumber.randomPhoneNumber);
     const blob = new Blob([phoneNumbers], { type: "text/plain;charset=utf-8" });
-    FileSaver.saveAs(blob, "phoneNumbers.txt")
+    FileSaver.saveAs(blob, "PhoneNumbers.txt")
     toastr.options = {
       closeButton: true,
       extendedTimeOut: '1000',
