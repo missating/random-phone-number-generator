@@ -102,16 +102,19 @@ class DisplayPhoneNumbers extends React.Component {
                 </tr>
               ))
             }
-            {
-              (paginatedPhoneNumbers.phoneNumberData && paginatedPhoneNumbers.phoneNumberData.length < 1) &&
-              (
-                <tr>
-                  <td colSpan="3" className="text-center">No Generated Phone Numbers Yet</td>
-                </tr>
-              )
-            }
           </tbody>
         </table>
+        {
+          (paginatedPhoneNumbers.phoneNumberData && paginatedPhoneNumbers.phoneNumberData.length < 1) &&
+          (
+            <div class="card" style={{ width: "18rem" }}>
+              <div class="card-body">
+                <h5 class="card-title">Welcome,</h5>
+                <p class="card-text">You have not Generated Phone Numbers!</p>
+              </div>
+            </div>
+          )
+        }
         {
           paginatedPhoneNumbers.phoneNumberData && paginatedPhoneNumbers.phoneNumberData.length >= 1
           && (

@@ -7,11 +7,12 @@ import toastr from 'toastr';
 import FileSaver from 'file-saver';
 
 // actions 
-import { generatePhoneNumbers } from '../../actions/phoneNumbersAction';
+import { generatePhoneNumbers, sortPhoneNumbersAscending, sortPhoneNumbersDescending } from '../../actions/phoneNumbersAction';
 
 // components
 import Button from '../../components/Button';
 import DisplayPhoneNumbers from "../../components/DisplayPhoneNumbers";
+import Operations from '../../components/Operations';
 
 // styles
 import './Home.css';
@@ -39,7 +40,7 @@ export class Home extends Component {
     toastr.options = {
       closeButton: true,
       extendedTimeOut: '1000',
-      positionClass: 'toast-top-right',
+      positionclassName: 'toast-bottom-right',
       hideMethod: 'fadeOut'
     };
     toastr.success('Phone Numbers Successfully Generated');
@@ -53,40 +54,76 @@ export class Home extends Component {
     toastr.options = {
       closeButton: true,
       extendedTimeOut: '1000',
-      positionClass: 'toast-top-right',
+      positionclassName: 'toast-bottom-right',
       hideMethod: 'fadeOut'
     };
     toastr.success('Phone Numbers Successfully Downloaded');
   }
 
+  onSortPhoneNumbers = (event) => {
+    const optionValue = event.target.value;
+    if (optionValue === "Ascending") {
+      this.props.sortPhoneNumbersAscending()
+    } else {
+      this.props.sortPhoneNumbersDescending()
+    }
+  }
+
   render() {
     return (
       <div className="home__container">
-        <nav className="navbar navbar-dark bg-dark justify-content-between">
-          <a href="#" className="navbar-brand">Phone Number Generator</a> {/* eslint-disable-line */}
-          <div className="form-inline">
-            <input
-              value={this.state.generatingValue}
-              onChange={this.onChange}
-              className="form-control mr-sm-2"
-              type="number"
-              placeholder="Input a number"
-            />
-            <Button
-              name="Generate"
-              className="Home__btn"
-              onClick={this.onAddGeneratingValue}
-              disabled={this.state.generatingValue.trim() === ''}
-            />
-            <Button
-              name="Download"
-              className="ml-3"
-              onClick={this.onDownloadPhoneNumbers}
-              disabled={this.props.phoneNumbers.length === 0}
-            />
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a className="navbar-brand" href="#">Phone Number Generator</a> {/* eslint-disable-line */}
+          <button
+            className="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+
+          <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+              {
+                this.props.phoneNumbers.length > 1 && (
+                  <div className="select-sort">
+                    <select onChange={this.onSortPhoneNumbers}>
+                      <option>Sort By...</option>
+                      <option value="Ascending">Ascending</option>
+                      <option value="Descending">Descending</option>
+                    </select>
+                  </div>
+                )
+              }
+            </ul>
+            <div className="form-inline">
+              <input
+                value={this.state.generatingValue}
+                onChange={this.onChange}
+                className="form-control mr-sm-2"
+                type="number"
+                placeholder="Input a number"
+              />
+              <Button
+                name="Generate"
+                className="Home__btn"
+                onClick={this.onAddGeneratingValue}
+                disabled={this.state.generatingValue.trim() === ''}
+              />
+              <Button
+                name="Download"
+                className="ml-3"
+                onClick={this.onDownloadPhoneNumbers}
+                disabled={this.props.phoneNumbers.length === 0}
+              />
+            </div>
           </div>
         </nav>
         <div>
+          {this.props.phoneNumbers.length > 2 && <Operations phoneNumbers={this.props.phoneNumbers} />}
           <DisplayPhoneNumbers
             phoneNumbers={this.props.phoneNumbers}
             hasGeneratedNumbers={this.state.hasGeneratedNumbers}
@@ -101,4 +138,4 @@ const mapStateToProps = state => ({
   phoneNumbers: state.phoneNumbers.data
 })
 
-export default connect(mapStateToProps, { generatePhoneNumbers })(Home);
+export default connect(mapStateToProps, { generatePhoneNumbers, sortPhoneNumbersAscending, sortPhoneNumbersDescending })(Home);

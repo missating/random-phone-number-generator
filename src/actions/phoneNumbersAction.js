@@ -1,6 +1,6 @@
 const GENERATE_PHONE_NUMBERS = 'GENERATE_PHONE_NUMBERS';
-const SORT_NUMBERS_ASCENDING = 'SORT_NUMBERS_ASCENDING';
-const SORT_NUMBERS_DESCENDING = 'SORT_NUMBERS_DESCENDING';
+const SORT_PHONE_NUMBERS_ASCENDING = 'SORT_PHONE_NUMBERS_ASCENDING';
+const SORT_PHONE_NUMBERS_DESCENDING = 'SORT_PHONE_NUMBERS_DESCENDING';
 
 export const generatePhoneNumbers = (phoneNumber) => {
   return (dispatch) => {
@@ -8,14 +8,14 @@ export const generatePhoneNumbers = (phoneNumber) => {
   }
 }
 
-export const sortNumbersAscending = () => {
+export const sortPhoneNumbersAscending = () => {
   return (dispatch) => {
-    dispatch({ type: SORT_NUMBERS_ASCENDING })
+    dispatch({ type: SORT_PHONE_NUMBERS_ASCENDING })
   }
 }
 
-export const sortNumbersDescending = () => {
+export const sortPhoneNumbersDescending= () => {
   return (dispatch) => {
-    dispatch({ type: SORT_NUMBERS_DESCENDING })
+    dispatch({ type: SORT_PHONE_NUMBERS_DESCENDING })
   }
 }

@@ -9,14 +9,14 @@ export default (state = initialState, action) => {
         ...state,
         data: [...action.phoneNumber]
       }
-    case 'SORT_NUMBERS_ASCENDING':
+    case 'SORT_PHONE_NUMBERS_ASCENDING':
       return {
         ...state,
         data: [...state.data.sort((a, b) => {
           return a.randomPhoneNumber - b.randomPhoneNumber;
         })]
       }
-    case 'SORT_NUMBERS_DESCENDING':
+    case 'SORT_PHONE_NUMBERS_DESCENDING':
       return {
         ...state,
         data: [...state.data.sort((a, b) => {
