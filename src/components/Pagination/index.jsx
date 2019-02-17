@@ -10,7 +10,7 @@ const Pagination = ({ pages, onPageChange }) => {
       pageRangeDisplayed={pages > 5 ? 6 : pages}
       previousLabel="Previous"
       nextLabel="Next"
-      breakLabel={<a href="">...</a>}
+      breakLabel={<a href="">...</a>} // eslint-disable-line
       pageCount={pages}
       containerClassName="pagination__container justify-content-center"
       pageClassName="page-item page-numbers-style"

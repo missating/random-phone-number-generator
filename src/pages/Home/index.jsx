@@ -1,9 +1,10 @@
 // react libraries
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 
 // third party libraries
 import { connect } from 'react-redux';
 import toastr from 'toastr';
+import FileSaver from 'file-saver';
 
 // actions 
 import { generatePhoneNumbers } from '../../actions/phoneNumbersAction';
@@ -38,19 +39,31 @@ export class Home extends Component {
     toastr.options = {
       closeButton: true,
       extendedTimeOut: '1000',
-      positionClass: 'toast-bottom-right',
+      positionClass: 'toast-top-right',
       hideMethod: 'fadeOut'
     };
     toastr.success('Phone Numbers Successfully Generated');
     this.props.generatePhoneNumbers(arr);
   }
 
+  onDownloadPhoneNumbers = () => {
+    const phoneNumbers = this.props.phoneNumbers.map(phoneNumber => phoneNumber.randomPhoneNumber);
+    const blob = new Blob([phoneNumbers], { type: "text/plain;charset=utf-8" });
+    FileSaver.saveAs(blob, "phoneNumbers.txt")
+    toastr.options = {
+      closeButton: true,
+      extendedTimeOut: '1000',
+      positionClass: 'toast-top-right',
+      hideMethod: 'fadeOut'
+    };
+    toastr.success('Phone Numbers Successfully Downloaded');
+  }
+
   render() {
-    console.log('=========', this.props.phoneNumbers)
     return (
       <div className="home__container">
         <nav className="navbar navbar-dark bg-dark justify-content-between">
-          <a href="#" className="navbar-brand">Phone Number Generator</a>
+          <a href="#" className="navbar-brand">Phone Number Generator</a> {/* eslint-disable-line */}
           <div className="form-inline">
             <input
               value={this.state.generatingValue}
@@ -65,6 +78,12 @@ export class Home extends Component {
               onClick={this.onAddGeneratingValue}
               disabled={this.state.generatingValue.trim() === ''}
             />
+            <Button
+              name="Download"
+              className="ml-3"
+              onClick={this.onDownloadPhoneNumbers}
+              disabled={this.props.phoneNumbers.length === 0}
+            />
           </div>
         </nav>
         <div>
@@ -72,7 +91,7 @@ export class Home extends Component {
             phoneNumbers={this.props.phoneNumbers}
             hasGeneratedNumbers={this.state.hasGeneratedNumbers}
           />
-          </div>
+        </div>
       </div>
     )
   }
