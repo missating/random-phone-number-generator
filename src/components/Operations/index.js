@@ -2,7 +2,6 @@
 import React from 'react';
 
 const Operations = (props) => {
-  console.log(props)
   const phoneNumbers = props.phoneNumbers.length > 0 ? props.phoneNumbers.map(phoneNumber => phoneNumber.randomPhoneNumber) : 0;
   const maxNumber = phoneNumbers === 0 ? 0 : Math.max(...phoneNumbers);
   const minNumber = phoneNumbers === 0 ? 0 : Math.min(...phoneNumbers);

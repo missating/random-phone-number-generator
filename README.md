@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/missating/random-phone-number-generator.svg?branch=develop)](https://travis-ci.org/missating/random-phone-number-generator)
 [![Coverage Status](https://coveralls.io/repos/github/missating/random-phone-number-generator/badge.svg?branch=develop)](https://coveralls.io/github/missating/random-phone-number-generator?branch=develop)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

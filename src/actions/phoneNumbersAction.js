@@ -14,7 +14,7 @@ export const sortPhoneNumbersAscending = () => {
   }
 }
 
-export const sortPhoneNumbersDescending= () => {
+export const sortPhoneNumbersDescending = () => {
   return (dispatch) => {
     dispatch({ type: SORT_PHONE_NUMBERS_DESCENDING })
   }

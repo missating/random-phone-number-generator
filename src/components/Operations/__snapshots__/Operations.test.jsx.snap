@@ -1,0 +1,596 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Operations Component should mount correctly 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Operations
+    phoneNumbers={Array []}
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        class="card"
+        style={
+          Object {
+            "width": "18rem",
+          }
+        }
+      >
+        <ul
+          class="list-group list-group-flush"
+        >
+          <li
+            class="list-group-item"
+          >
+            Maximum Generated Phone Number: 
+            000
+          </li>
+          <li
+            class="list-group-item"
+          >
+            Minimum Generated Phone Number: 
+            000
+          </li>
+        </ul>
+      </div>,
+      "className": "minimax-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          class="list-group list-group-flush"
+        >
+          <li
+            class="list-group-item"
+          >
+            Maximum Generated Phone Number: 
+            000
+          </li>
+          <li
+            class="list-group-item"
+          >
+            Minimum Generated Phone Number: 
+            000
+          </li>
+        </ul>,
+        "class": "card",
+        "style": Object {
+          "width": "18rem",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              000
+            </li>,
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              000
+            </li>,
+          ],
+          "class": "list-group list-group-flush",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Maximum Generated Phone Number: ",
+                "000",
+              ],
+              "class": "list-group-item",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Maximum Generated Phone Number: ",
+              "000",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Minimum Generated Phone Number: ",
+                "000",
+              ],
+              "class": "list-group-item",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Minimum Generated Phone Number: ",
+              "000",
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          class="card"
+          style={
+            Object {
+              "width": "18rem",
+            }
+          }
+        >
+          <ul
+            class="list-group list-group-flush"
+          >
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              000
+            </li>
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              000
+            </li>
+          </ul>
+        </div>,
+        "className": "minimax-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            class="list-group list-group-flush"
+          >
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              000
+            </li>
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              000
+            </li>
+          </ul>,
+          "class": "card",
+          "style": Object {
+            "width": "18rem",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                class="list-group-item"
+              >
+                Maximum Generated Phone Number: 
+                000
+              </li>,
+              <li
+                class="list-group-item"
+              >
+                Minimum Generated Phone Number: 
+                000
+              </li>,
+            ],
+            "class": "list-group list-group-flush",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Maximum Generated Phone Number: ",
+                  "000",
+                ],
+                "class": "list-group-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Maximum Generated Phone Number: ",
+                "000",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Minimum Generated Phone Number: ",
+                  "000",
+                ],
+                "class": "list-group-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Minimum Generated Phone Number: ",
+                "000",
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`Operations Component should perform operations on phone numbers if they have been generated 1`] = `
+ShallowWrapper {
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Operations
+    phoneNumbers={
+      Array [
+        Object {
+          "randomPhoneNumber": 1234566,
+        },
+        Object {
+          "randomPhoneNumber": 986945,
+        },
+      ]
+    }
+  />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "checkPropTypes": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateError": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": <div
+        class="card"
+        style={
+          Object {
+            "width": "18rem",
+          }
+        }
+      >
+        <ul
+          class="list-group list-group-flush"
+        >
+          <li
+            class="list-group-item"
+          >
+            Maximum Generated Phone Number: 
+            01234566
+          </li>
+          <li
+            class="list-group-item"
+          >
+            Minimum Generated Phone Number: 
+            0986945
+          </li>
+        </ul>
+      </div>,
+      "className": "minimax-container",
+    },
+    "ref": null,
+    "rendered": Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <ul
+          class="list-group list-group-flush"
+        >
+          <li
+            class="list-group-item"
+          >
+            Maximum Generated Phone Number: 
+            01234566
+          </li>
+          <li
+            class="list-group-item"
+          >
+            Minimum Generated Phone Number: 
+            0986945
+          </li>
+        </ul>,
+        "class": "card",
+        "style": Object {
+          "width": "18rem",
+        },
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              01234566
+            </li>,
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              0986945
+            </li>,
+          ],
+          "class": "list-group list-group-flush",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Maximum Generated Phone Number: ",
+                "01234566",
+              ],
+              "class": "list-group-item",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Maximum Generated Phone Number: ",
+              "01234566",
+            ],
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "Minimum Generated Phone Number: ",
+                "0986945",
+              ],
+              "class": "list-group-item",
+            },
+            "ref": null,
+            "rendered": Array [
+              "Minimum Generated Phone Number: ",
+              "0986945",
+            ],
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      "type": "div",
+    },
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": <div
+          class="card"
+          style={
+            Object {
+              "width": "18rem",
+            }
+          }
+        >
+          <ul
+            class="list-group list-group-flush"
+          >
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              01234566
+            </li>
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              0986945
+            </li>
+          </ul>
+        </div>,
+        "className": "minimax-container",
+      },
+      "ref": null,
+      "rendered": Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <ul
+            class="list-group list-group-flush"
+          >
+            <li
+              class="list-group-item"
+            >
+              Maximum Generated Phone Number: 
+              01234566
+            </li>
+            <li
+              class="list-group-item"
+            >
+              Minimum Generated Phone Number: 
+              0986945
+            </li>
+          </ul>,
+          "class": "card",
+          "style": Object {
+            "width": "18rem",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                class="list-group-item"
+              >
+                Maximum Generated Phone Number: 
+                01234566
+              </li>,
+              <li
+                class="list-group-item"
+              >
+                Minimum Generated Phone Number: 
+                0986945
+              </li>,
+            ],
+            "class": "list-group list-group-flush",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Maximum Generated Phone Number: ",
+                  "01234566",
+                ],
+                "class": "list-group-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Maximum Generated Phone Number: ",
+                "01234566",
+              ],
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "Minimum Generated Phone Number: ",
+                  "0986945",
+                ],
+                "class": "list-group-item",
+              },
+              "ref": null,
+              "rendered": Array [
+                "Minimum Generated Phone Number: ",
+                "0986945",
+              ],
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        "type": "div",
+      },
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+        "legacyContextMode": "parent",
+        "lifecycles": Object {
+          "componentDidUpdate": Object {
+            "onSetState": true,
+          },
+          "getChildContext": Object {
+            "calledByRenderer": false,
+          },
+          "getDerivedStateFromProps": true,
+          "getSnapshotBeforeUpdate": true,
+          "setState": Object {
+            "skipsComponentDidUpdateOnNullish": true,
+          },
+        },
+      },
+    },
+  },
+}
+`;
