@@ -1,8 +1,15 @@
+// react libraries
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+// third party packages
 import * as serviceWorker from './serviceWorker';
+import ReactDOM from 'react-dom';
+
+// components
+import App from './App';
+
+// styles
+import './index.css';
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
