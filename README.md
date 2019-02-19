@@ -26,7 +26,7 @@
 
 ## Getting Started
 
-* Before cloning the repo, make sure you have Node and Yarn installed on your local machine
+* Before cloning the repo, make sure you have `Node` and `Yarn` installed on your local machine
 * Clone the repo to your local machine
 
 ```sh
